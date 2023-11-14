@@ -1,0 +1,575 @@
+/* Reset CSS */
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+blockquote,
+dl, dd, ol, ul,
+figure,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+select {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set default font to improve consistency across browsers */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Ensure images are not resized beyond their natural size */
+img {
+    max-width: 100%;
+}
+
+/* Correct block-level display in IE 9-10 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1;
+}
+
+
+ul, ol {
+    list-style: none;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* index.html styles */
+
+body {
+    background-color: #e2dacf;
+}
+
+
+
+header {
+    color: #e2dacf
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header-container {
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #5b3411;
+    padding: 2rem;
+}
+
+.hero-container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #5b3411;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.logo p {
+    max-width: 300px;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.logo img {
+    max-width: 80px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem 1rem;
+    transition: font-size 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    font-size: 1.2em; 
+    background-color: #8b4513; /
+}
+
+
+
+/* Style for skip link */
+.skip-link {
+    position: fixed;
+    top: -40px;
+    left: 10px;
+    background-color: #5b3411;
+    color: #e2dacf;
+    padding: 10px;
+    z-index: 999;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: top 0.3s ease-in-out;
+}
+
+.skip-link:hover {
+    top: 0;
+}
+
+
+.skip-link:active,
+.skip-link:focus {
+    top: -40px;
+}
+
+
+body {
+    margin-top: 40px;
+}
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+
+.search {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e2dacf;
+    border: 1px solid black;
+    padding: 1rem 1rem;
+    border-radius: 25px;
+    gap: 1rem;
+}
+
+.search input {
+    display: inline;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background-color: #e2dacf;
+    width: 350px;
+    max-width: 100%;
+}
+
+.search input::placeholder {
+    font-size: 1rem;
+}
+
+.search span {
+    color: black;
+    font-size: 2rem;
+}
+
+
+.hero-container button {
+    background-color: #e2dacf;
+    color: #5b3411;
+    padding: 1rem 2rem;
+        border-radius: 25px;
+
+}
+
+.hero-container .image-container img {
+    max-width: 400px;
+    border-radius: 25px;
+}
+
+.products-container {
+     max-width: 950px;
+    margin: 0 auto;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    color: #5b3411;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.products-container .image {
+    border-radius: 50%;
+} 
+
+.products-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+.slider-container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    color: #5b3411;
+    text-align: center;
+    font-size: 1.25rem;
+
+}
+
+.slider-container span {
+    font-size: 5rem;
+}
+
+.slider-container .image {
+    border-radius: 25px;
+}
+
+.slider-container img {
+    border-radius: 25px;
+    max-width: 200px;
+    aspect-ratio: 3/4;
+}
+
+footer {
+margin-top: 4rem;
+
+}
+
+.bottom-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.bottom-nav ul a {
+    color: #5b3411;
+    text-align: center;
+}
+
+.bottom-nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+
+.bottom-nav ul span {
+    display: block;
+    font-size: 5rem;
+    color:black;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        padding: 1rem;
+    }
+
+    .logo p {
+        max-width: none;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 0.5rem;
+    }
+
+    .search {
+        flex-direction: row;
+    }
+
+    .search input {
+        width: auto;
+    }
+
+    .hero-container {
+        padding: 1rem;
+    }
+
+    .hero-container button {
+        padding: 0.5rem 1rem;
+    }
+
+    .hero-container .image-container img {
+        max-width: 100%;
+    }
+
+    .products-container {
+        padding: 1rem;
+    }
+
+    .products-container .image {
+        flex: 0 0 100%;
+    }
+
+    .products-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .slider-container {
+        padding: 1rem;
+    }
+
+    .slider-container span {
+        font-size: 2rem;
+    }
+
+    .slider-container .image,
+    .slider-container img {
+        max-width: 100%;
+    }
+
+    footer {
+        margin-top: 1rem;
+    }
+
+    .bottom-nav ul {
+        flex-direction: row;
+    }
+
+    .bottom-nav ul span {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+
+/* menu.html  styles */
+section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+section img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.menu-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if the container is too narrow */
+    align-items: flex-start;
+}
+
+
+.menu-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.menu-item img {
+    width: 200px; 
+    height: 150px;
+    border-radius: 15px; 
+    margin-bottom: 10px; /* Add margin to space the items */
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+.menu-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu-image {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.menu-image:hover {
+    transform: scale(1.1);
+}
+
+.menu-item figcaption {
+    margin-top: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #5b3411;
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .menu-item img {
+        width: 100%; 
+        max-width: none; 
+        height: auto; 
+        border-radius: 10px; 
+    }
+
+}
+
+/* coupons.html styles */
+.redeem-button {
+    background-color: #5b3411;
+    color: #e2dacf;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Add hover effect */
+.redeem-button:hover {
+    background-color: #e2dacf;
+    color: #5b3411;
+}
+.coupon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Add the styles for the coupon items (optional) */
+.coupon {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.coupon img {
+    max-width: 50%;
+    height:50%
+}
+.h1coupons {
+    text-align: center;
+    margin-bottom: 20px;
+    color:#5b3411;
+}
+h2,h3,p{
+    color: #5b3411;
+}
+
+.header-container .logo p {
+    color: #e2dacf; /* Set the desired color for the <p> element */
+}
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        padding: 0.5rem;
+    }
+
+    .logo p {
+        font-size: 1.2rem;
+    }
+
+    .h1coupons {
+        font-size: 1.5rem;
+    }
+
+    .coupon {
+        padding: 10px;
+    }
+
+    .coupon img {
+        border-radius: 0; 
+    }
+
+    .redeem-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
